@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+            android:id="@+id/layout_coming_shows"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ProgressBar
+                android:id="@+id/progressBar_coming_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:padding="4dip"
+                />
+
+        <ListView
+                android:id="@+id/listview_coming_shows"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#b5b5b5"
+                android:dividerHeight="1dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_recent_shows"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Shows"
+                android:id="@+id/label_recent_shows"
+                />
+
+        <ProgressBar
+                android:id="@+id/progressBar_recent_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:padding="4dip"
+                />
+
+        <ListView
+                android:id="@+id/listview_recent_shows"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#b5b5b5"
+                android:dividerHeight="1dp"
+                />
+    </LinearLayout>
+</LinearLayout>

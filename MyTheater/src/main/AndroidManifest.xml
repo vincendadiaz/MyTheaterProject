@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sciters.mytheater"
+    android:versionCode="2"
+    android:versionName="1.1"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:debuggable="false"
+        android:allowBackup="true"
+        android:icon="@drawable/banner2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.sciters.mytheater.services.MyTheaterService"
+            android:icon="@drawable/yona"
+            android:label="Test" >
+        </service>
+
+        <activity
+            android:name="com.sciters.mytheater.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.SetListSong"
+            android:screenOrientation="portrait"
+            android:label="Song List" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.ShowActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_show"
+            android:parentActivityName="com.sciters.mytheater.TabHomeActivity" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.MemberActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_member" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.TestTabActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_test_tab" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.ApplyTicketActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_apply_ticket" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.About"
+            android:screenOrientation="portrait"
+            android:label="About" >
+        </activity>
+        <activity
+            android:name="com.sciters.mytheater.TabHomeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tab_home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="My Theater" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:name="com.sciters.mytheater.helper.ReminderService">
+        </service>
+
+
+        <activity
+            android:name="com.sciters.mytheater.RecentShowActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_recent_show" >
+        </activity>
+    </application>
+
+</manifest>

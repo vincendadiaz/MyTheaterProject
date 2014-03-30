@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dip"
+    android:paddingBottom="5dip"
+    android:paddingTop="3dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="3dip"
+    android:layout_gravity="center"
+    >
+
+
+    <!-- Name of Member -->
+    <TextView
+        android:id="@+id/judullagua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul lagu dari set list"
+        android:textColor="#040404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:singleLine="true" />
+
+</RelativeLayout>

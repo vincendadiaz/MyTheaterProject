@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="My Theater JKT48"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Segala informasi yang berada pada aplikasi ini didapatkan dari:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/linkklasemenjkt48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mytheater.klasemenjkt48.com"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#3498db"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Feedback : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/emailgilang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="sciters@gmail.com"
+        android:textColor="#3498db"
+        android:textSize="20sp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/emailbyhaqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="achmad.byhaqi@gmail.com"
+        android:textColor="#3498db"
+        android:textSize="20sp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/emailvince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="vincendadiaz7@gmail.com"
+        android:textColor="#3498db"
+        android:textSize="20sp"
+        android:clickable="true" />
+
+
+
+
+</LinearLayout>

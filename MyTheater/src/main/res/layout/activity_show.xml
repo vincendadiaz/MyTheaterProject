@@ -1,0 +1,709 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar_show_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+        <LinearLayout
+            android:id="@+id/layout_show_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Show ID (not visible to layout) -->
+            <TextView
+                android:id="@+id/show_id"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                />
+
+            <!-- Show Main Info -->
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Show Image Banner -->
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/show_top_notif"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dip"
+                        >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/show_top_color"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="#2c3e50"
+                            >
+
+                            <TextView
+                                android:id="@+id/show_top_notif_label"
+                                android:text="TOMORROW"
+                                android:textColor="#fff"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dip"
+                                android:gravity="right"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <ImageView
+                        android:id="@+id/show_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dip"
+                        android:src="@drawable/rkj2"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/layout_apply_info_placeholder">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1">
+
+                            <!-- OFC -->
+                            <LinearLayout
+                                android:id="@+id/label_OFC"
+                                android:orientation="vertical"
+                                android:layout_height="35dip"
+                                android:layout_width="fill_parent"
+                                android:layout_weight="1"
+                                android:background="#3498db">
+
+                                <TextView
+                                    android:id="@+id/show_label_OFC"
+                                    android:text="OFC"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/show_label_OFC_info"
+                                    android:text="Remind me!"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+                            <!-- FAR -->
+                            <LinearLayout
+                                android:id="@+id/label_FAR"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="#f1c40f">
+
+                                <TextView
+                                    android:id="@+id/show_label_FAR"
+                                    android:text="FAR"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/show_label_FAR_info"
+                                    android:text="Remind me!"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            >
+                            <!-- FEM -->
+                            <LinearLayout
+                                android:id="@+id/label_FEM"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:background="#e74c3c">
+
+                                <TextView
+                                    android:id="@+id/show_label_FEM"
+                                    android:text="FEM"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/show_label_FEM_info"
+                                    android:text="Remind me!"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+                            <!-- GEN -->
+                            <LinearLayout
+                                android:id="@+id/label_GEN"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_weight="1"
+                                android:layout_height="35dip"
+                                android:background="#2ecc71">
+
+                                <TextView
+                                    android:id="@+id/show_label_GEN"
+                                    android:text="GEN"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/show_label_GEN_info"
+                                    android:text="Remind me!"
+                                    android:textColor="#fff"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Show Core Info -->
+                    <RelativeLayout
+                        android:id="@+id/show_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="15dip">
+
+                        <LinearLayout
+                            android:id="@+id/layout_main_placeholder"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <!-- Name of Show -->
+                                    <TextView
+                                        android:id="@+id/show_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Aturan Anti Cinta"
+                                        android:textColor="#2c3e50"
+                                        android:textSize="24sp"
+                                        android:focusableInTouchMode="false"
+                                        />
+                                    <!-- Subtitle Name of Show -->
+                                    <TextView
+                                        android:id="@+id/show_night_schedule"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="19:00 (Show Malam)"
+                                        android:textColor="#2c3e50"
+                                        android:textSize="15sp"
+                                        android:focusableInTouchMode="false"
+                                        android:textStyle="bold|italic" />
+
+                                </LinearLayout>
+
+                                <!-- Team Name -->
+                                <TextView
+                                    android:id="@+id/show_team_name"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:paddingRight="15dip"
+                                    android:paddingLeft="5dip"
+                                    android:paddingBottom="15dip"
+                                    android:text="Team K3"
+                                    android:textSize="24sp"
+                                    android:textColor="#2c3e50"
+                                    android:textStyle="bold"/>
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <!-- Show Recent Info Placeholder -->
+                                    <LinearLayout
+                                        android:id="@+id/show_date_recent_placeholder"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        >
+
+                                        <!-- Show Date -->
+                                        <TextView
+                                            android:id="@+id/show_date"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#2c3e50"
+                                            android:textSize="15sp"
+                                            android:text="Selasa, 13 Oktober 2013 16:00"
+                                            android:layout_marginTop="1dip"
+                                            android:visibility="visible" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:id="@+id/show_top_performer"
+                                            android:layout_marginTop="15dp">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="15sp"
+                                                android:text="Top Performer:"
+                                                android:layout_marginTop="1dip"
+                                                />
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="30dip"
+                                                    android:layout_height="30dip"
+                                                    android:src="@drawable/orang"
+                                                    android:paddingRight="5dip"
+                                                    android:paddingLeft="2dip"
+                                                    android:layout_marginTop="1dip"
+                                                    android:id="@+id/show_top_performer_image" />
+
+                                                <TextView
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="#2c3e50"
+                                                    android:textSize="15sp"
+                                                    android:text="Lidya (9,5)"
+                                                    android:layout_marginTop="1dip"
+                                                    android:layout_gravity="center"
+                                                    android:id="@+id/show_top_performer_text" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!-- Show Coming Info Placeholder -->
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:id="@+id/show_apply_schedule_placeholder">
+
+                                        <RelativeLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="5dip">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:id="@+id/label_OFC_2"
+                                                android:layout_width="50dip"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:text="OFC"
+                                                android:background="@drawable/apply_ticket_layout_left_ofc"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/label_time_ofc"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="9sp"
+                                                android:layout_toRightOf="@id/label_OFC_2"
+                                                android:layout_centerVertical="true"
+                                                android:paddingLeft="5dip"
+                                                android:layout_gravity="center"
+                                                android:text="20.10.2013 12:00\n21.10.2013 23:59"/>
+
+                                            <Button
+                                                style="?android:attr/buttonStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dip"
+                                                android:text="Apply"
+                                                android:textSize="9sp"
+                                                android:id="@+id/button_apply_ofc"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/label_time_ofc"
+                                                />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="5dip">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:id="@+id/label_FAR_2"
+                                                android:layout_width="50dip"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:text="FAR"
+                                                android:background="@drawable/apply_ticket_layout_left_far"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/label_time_far"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="9sp"
+                                                android:layout_toRightOf="@id/label_FAR_2"
+                                                android:layout_centerVertical="true"
+                                                android:paddingLeft="5dip"
+                                                android:layout_gravity="center"
+                                                android:text="20.10.2013 12:00\n21.10.2013 23:59"/>
+
+                                            <Button
+                                                style="?android:attr/buttonStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dip"
+                                                android:text="Apply"
+                                                android:textSize="9sp"
+                                                android:id="@+id/button_apply_far"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/label_time_far"/>
+                                        </RelativeLayout>
+
+
+                                        <RelativeLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="5dip">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:id="@+id/label_FEM_2"
+                                                android:layout_width="50dip"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:text="FEM"
+                                                android:background="@drawable/apply_ticket_layout_left_fem"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/label_time_fem"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="9sp"
+                                                android:layout_toRightOf="@id/label_FEM_2"
+                                                android:layout_centerVertical="true"
+                                                android:paddingLeft="5dip"
+                                                android:layout_gravity="center"
+                                                android:text="20.10.2013 12:00\n21.10.2013 23:59"/>
+
+                                            <Button
+
+                                                style="?android:attr/buttonStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dip"
+                                                android:text="Apply"
+                                                android:textSize="9sp"
+                                                android:id="@+id/button_apply_fem"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/label_time_fem"/>
+                                        </RelativeLayout>
+
+
+                                        <RelativeLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="5dip">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:id="@+id/label_GEN_2"
+                                                android:layout_width="50dip"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:layout_centerVertical="true"
+                                                android:gravity="center"
+                                                android:text="GEN"
+                                                android:background="@drawable/apply_ticket_layout_left_gen"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/label_time_gen"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="9sp"
+                                                android:layout_toRightOf="@id/label_GEN_2"
+                                                android:layout_centerVertical="true"
+                                                android:paddingLeft="5dip"
+                                                android:layout_gravity="center"
+                                                android:text="20.10.2013 12:00\n21.10.2013 23:59"/>
+
+                                            <Button
+                                                style="?android:attr/buttonStyleSmall"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dip"
+                                                android:text="Apply"
+                                                android:textSize="9sp"
+                                                android:id="@+id/button_apply_gen"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/label_time_gen"/>
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- Right Placeholder -->
+                                <LinearLayout
+                                    android:id="@+id/layout_right_placeholder"
+                                    android:orientation="vertical"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:paddingRight="15dip"
+                                    android:paddingLeft="5dip"
+                                    android:paddingBottom="15dip">
+
+                                    <!-- Show Date Coming Placeholder -->
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:id="@+id/show_coming_show_date_placeholder">
+                                        <LinearLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="100dip"
+                                            android:orientation="vertical">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:id="@+id/show_date_day"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:gravity="center"
+                                                android:text="Selasa"
+                                                android:background="@drawable/calendar_layout_top"
+                                                android:layout_marginTop="3dip"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="100dip"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/calendar_layout_body"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/show_date_dayofmonth"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="48sp"
+                                                android:text="13"
+                                                android:gravity="center"
+                                                />
+
+                                            <TextView
+                                                android:id="@+id/show_date_month"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="15sp"
+                                                android:gravity="center"
+                                                android:text="November"
+                                                android:layout_marginTop="1dip"
+                                                android:paddingBottom="3dip"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <!-- Show Rating Placeholder -->
+                                    <LinearLayout
+                                        android:id="@+id/show_rating_placeholder"
+                                        android:orientation="vertical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="100dip"
+                                            android:orientation="vertical">
+                                            <!-- Show Date -->
+                                            <TextView
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#fff"
+                                                android:textSize="18sp"
+                                                android:gravity="center"
+                                                android:text="Score"
+                                                android:background="@drawable/calendar_layout_top"
+                                                android:layout_marginTop="3dip"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="100dip"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/calendar_layout_body"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/show_rating"
+                                                android:layout_width="100dip"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#2c3e50"
+                                                android:textSize="48sp"
+                                                android:text="9,5"
+                                                android:layout_marginTop="1dip"
+                                                android:gravity="center"/>
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                android:gravity="center"
+                                                >
+                                                <TextView
+                                                    android:id="@+id/show_review_count"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="fill_parent"
+                                                    android:textColor="#2c3e50"
+                                                    android:text="9"
+                                                    android:layout_marginTop="1dip"
+                                                    android:gravity="center"/>
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="fill_parent"
+                                                    android:src="@drawable/review"
+                                                    android:paddingRight="5dip"
+                                                    android:paddingLeft="2dip"
+                                                    android:layout_marginTop="1dip"/>
+
+                                                <TextView
+                                                    android:id="@+id/show_audience_count"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="#2c3e50"
+                                                    android:text="12"
+                                                    android:layout_marginTop="1dip"
+                                                    android:gravity="center"/>
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="fill_parent"
+                                                    android:src="@drawable/attendant"
+                                                    android:paddingLeft="2dip"
+                                                    android:layout_marginTop="1dip"/>
+                                            </LinearLayout>
+                                            <RatingBar
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/ratingBar"
+                                                style="@style/myRatingBar"
+                                                android:layout_gravity="center"
+                                                android:numStars="5"
+                                                android:rating="3.5" />
+
+                                        </LinearLayout>
+                                        <!-- Show Score -->
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_show_performers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+        <!-- Show Performers -->
+        <!-- Show Performers Listview -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_show_performers"
+            >
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listview_performers"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

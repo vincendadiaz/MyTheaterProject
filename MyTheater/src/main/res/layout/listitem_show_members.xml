@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginBottom="5dip"
+android:paddingBottom="5dip"
+    android:paddingTop="3dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="3dip"
+    android:layout_gravity="center"
+    >
+
+<!--  ListRow Left side Thumbnail image -->
+<LinearLayout android:id="@+id/member_thumbnail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="5dip"
+    >
+
+    <ImageView
+        android:id="@+id/member_image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/yona"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/member_id"
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/member_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="8.9"
+        android:layout_marginRight="15dip"
+        android:textSize="36sp"
+        android:textColor="#343434"
+        android:textStyle="bold"/>
+<!-- Name of Member -->
+<TextView
+    android:id="@+id/member_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/member_thumbnail"
+    android:layout_toRightOf="@+id/member_thumbnail"
+    android:text="Viviyona Apriyani"
+    android:textColor="#040404"
+    android:textSize="18sp"
+    android:layout_toLeftOf="@id/member_rating"
+    android:textStyle="bold"
+    android:singleLine="true" />
+
+
+<!-- Unit Song -->
+<TextView
+    android:id="@+id/member_show_unit_song"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/member_name"
+    android:textColor="#343434"
+    android:textSize="15sp"
+    android:text="Kagami no Naka no Jeanne D'Arc"
+    android:layout_marginTop="1dip"
+    android:layout_toRightOf="@+id/member_thumbnail"
+    android:layout_toLeftOf="@id/member_rating"/>
+
+</RelativeLayout>

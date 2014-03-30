@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MemberActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dip">
+        <TextView
+            android:id="@+id/member_id"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_info"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                android:id="@+id/member_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_marginLeft="5dip"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                            android:id="@+id/member_image"
+                            android:layout_width="150dip"
+                            android:layout_height="150dip"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                android:id="@+id/member_info"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                    <!-- Name of Member-->
+                    <TextView
+                            android:id="@+id/member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                        android:textColor="#040404"
+                            android:typeface="sans"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                        android:layout_gravity="center_horizontal" />
+
+                    <!-- Member Team -->
+                    <TextView
+                            android:id="@+id/member_team"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#343434"
+                            android:textSize="20sp"
+                        android:layout_marginTop="1dip"
+                        android:layout_gravity="center_horizontal" />
+
+                    <!--Member Twitter-->
+                    <TextView
+                        android:id="@+id/member_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#343434"
+                        android:textSize="15sp"
+                        android:layout_marginTop="1dip"
+                        android:layout_gravity="center_horizontal" />
+
+                    <!-- Jumlah Perform -->
+                    <TextView
+                            android:id="@+id/member_number_of_shows"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#343434"
+                            android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp" />
+
+                    <!-- Reviews -->
+                    <TextView
+                            android:id="@+id/member_average_score"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#343434"
+                            android:textSize="15sp"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:layout_height="0.75dip"
+                android:background="#bbbbbb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listview_setlists"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

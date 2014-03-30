@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Show ID (not visible to layout) -->
+
+        <TextView
+            android:id="@+id/show_id"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGambar"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        <ImageView
+            android:id="@+id/show_image"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:src="@drawable/bntkeren"
+            android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout"
+                android:layout_marginTop="150dp"
+                android:background="#fff"
+                android:alpha="0.8"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/show_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text='"Renai Kinshi Jourei"'
+                        android:textColor="#2c3e50"
+                        android:textSize="20sp"
+                        android:focusableInTouchMode="false"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/show_night_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19:00 (Show Malam)"
+                        android:textColor="#2c3e50"
+                        android:textSize="15sp"
+                        android:focusableInTouchMode="false"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/show_team_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="18dip"
+                    android:text="Team K3"
+                    android:textSize="24sp"
+                    android:textColor="#2c3e50"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/relativeLayoutGambar"
+            android:paddingLeft="15dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="10dip">
+
+            <!-- Name of Show-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:paddingBottom="15dip"
+                android:id="@+id/linearLayout2">
+
+                <LinearLayout
+                    android:id="@+id/show_date_recent_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true" >
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/show_date_day"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:text="Selasa"
+                            android:background="@drawable/calendar_layout_top"
+                            android:layout_marginTop="3dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calendar_layout_body"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/show_date_dayofmonth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#2c3e50"
+                            android:textSize="48sp"
+                            android:text="13"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/show_date_month"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#2c3e50"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="November"
+                            android:layout_marginTop="1dip"
+                            android:paddingBottom="3dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <!-- Show Date -->
+                    <TextView
+                        android:id="@+id/show_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2c3e50"
+                        android:textSize="15sp"
+                        android:text="Selasa, 13 Oktober 2013 16:00"
+                        android:layout_marginTop="1dip"
+                        android:visibility="gone" />
+
+                    <!-- Show Score -->
+                    <TextView
+                        android:id="@+id/show_rating"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_date"
+                        android:textColor="#2c3e50"
+                        android:textSize="17sp"
+                        android:text="Rating: "
+                        android:layout_marginTop="5dip" />
+
+                    <!-- Show Audience Count -->
+                    <TextView
+                        android:id="@+id/show_audience_count"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_rating"
+                        android:textColor="#2c3e50"
+                        android:textSize="17sp"
+                        android:text="Jumlah Penonton: "
+                        android:layout_marginTop="5dip" />
+
+                    <!-- Show Review Count -->
+                    <TextView
+                        android:id="@+id/show_review"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_audience_count"
+                        android:textColor="#2c3e50"
+                        android:textSize="17sp"
+                        android:text="Review: "
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:gravity="bottom|end"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/show_extra_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>

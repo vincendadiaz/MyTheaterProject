@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <!-- Show ID (not visible to layout) -->
+    <TextView
+        android:id="@+id/show_id"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+    />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:id="@+id/show_image"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/rkjsquall"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/show_top_notif"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/show_top_color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#2c3e50"
+                    >
+
+                    <TextView
+                        android:id="@+id/show_top_notif_label"
+                        android:text="TOMORROW"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dip"
+                        android:gravity="right"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="180dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1">
+
+                <!-- OFC -->
+                <LinearLayout
+                    android:id="@+id/label_OFC"
+                    android:orientation="vertical"
+                    android:layout_height="35dip"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#3498db">
+
+                    <TextView
+                        android:id="@+id/show_label_OFC"
+                        android:text="OFC"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/show_label_OFC_info"
+                        android:text="Remind me!"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- FAR -->
+                <LinearLayout
+                    android:id="@+id/label_FAR"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="#f1c40f">
+
+                    <TextView
+                        android:id="@+id/show_label_FAR"
+                        android:text="FAR"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/show_label_FAR_info"
+                        android:text="Remind me!"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <!-- FEM -->
+                <LinearLayout
+                    android:id="@+id/label_FEM"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="#e74c3c">
+
+                    <TextView
+                        android:id="@+id/show_label_FEM"
+                        android:text="FEM"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/show_label_FEM_info"
+                        android:text="Remind me!"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <!-- GEN -->
+                <LinearLayout
+                    android:id="@+id/label_GEN"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="35dip"
+                    android:background="#2ecc71">
+
+                    <TextView
+                        android:id="@+id/show_label_GEN"
+                        android:text="GEN"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/show_label_GEN_info"
+                        android:text="Remind me!"
+                        android:textColor="#fff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/show_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="15dip"
+        android:paddingTop="10dip"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Name of Show-->
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/show_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text='"Renai Kinshi Jourei"'
+                        android:textColor="#2c3e50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:focusableInTouchMode="false"
+                        />
+
+                    <!-- Subtitle Name of Show-->
+                    <TextView
+                        android:id="@+id/show_night_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19:00 (Show Malam)"
+                        android:textColor="#2c3e50"
+                        android:textSize="15sp"
+                        android:focusableInTouchMode="false"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+                <!-- Team Name -->
+                <TextView
+                    android:id="@+id/show_team_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="18dip"
+                    android:text="Team K3"
+                    android:textSize="24sp"
+                    android:textColor="#2c3e50"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <!-- Random Performers-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:id="@+id/show_random_performers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starring:"
+                    android:textColor="#2c3e50"
+                    android:textSize="15sp"
+                    android:focusableInTouchMode="false"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="15dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip">
+                        <LinearLayout
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_random_performer_image_1"
+                                android:layout_width="24dip"
+                                android:layout_height="24dip"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/yona"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/show_random_performer_name_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="Veranda"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_random_performer_image_2"
+                                android:layout_width="24dip"
+                                android:layout_height="24dip"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/yona"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/show_random_performer_name_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="Veranda"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip">
+                        <LinearLayout
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_random_performer_image_3"
+                                android:layout_width="24dip"
+                                android:layout_height="24dip"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/yona"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/show_random_performer_name_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="Veranda"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_random_performer_image_4"
+                                android:layout_width="24dip"
+                                android:layout_height="24dip"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/yona"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/show_random_performer_name_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="Veranda"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dip">
+                        <LinearLayout
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_random_performer_image_5"
+                                android:layout_width="24dip"
+                                android:layout_height="24dip"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/yona"
+                                android:scaleType="centerCrop" />
+
+                            <TextView
+                                android:id="@+id/show_random_performer_name_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="Veranda"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/show_random_performers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="...and more"
+                                android:textColor="#2c3e50"
+                                android:textSize="15sp"
+                                android:focusableInTouchMode="false"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dip"
+                                android:layout_gravity="bottom" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Right Placeholder -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="15dip"
+                android:paddingLeft="15dip"
+                android:paddingBottom="15dip">
+
+
+                <!-- Show Date Coming Placeholder -->
+                <LinearLayout
+                    android:id="@+id/show_date_coming_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dip"
+                        android:orientation="vertical">
+                        <!-- Show Date -->
+                        <TextView
+                            android:id="@+id/show_date_day"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:text="Selasa"
+                            android:background="@drawable/calendar_layout_top"
+                            android:layout_marginTop="3dip"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calendar_layout_body"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/show_date_dayofmonth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#2c3e50"
+                            android:textSize="48sp"
+                            android:text="13"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/show_date_month"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#2c3e50"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="November"
+                            android:layout_marginTop="1dip"
+                            android:paddingBottom="3dip"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Show Date -->
+        <TextView
+                android:id="@+id/show_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c3e50"
+                android:textSize="15sp"
+                android:text="Selasa, 13 Oktober 2013 16:00"
+                android:visibility="gone"
+                android:layout_marginTop="1dip"/>
+
+        <!-- Show Date apply schedule -->
+        <TextView
+            android:id="@+id/show_apply_schedule"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2c3e50"
+            android:textSize="15sp"
+            android:text="GEN | FAR | FEM | OFC"
+            android:layout_marginTop="1dip"
+            android:visibility="gone"
+            android:paddingBottom="10dip"
+            />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:gravity="bottom|end"
+            android:layout_marginTop="185dp"
+            android:layout_marginBottom="30dp">
+            <ImageView
+                android:id="@+id/bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp" />
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/show_extra_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>
